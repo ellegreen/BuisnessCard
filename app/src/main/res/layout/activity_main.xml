@@ -12,15 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     <ImageView
-        android:id="@+id/player_image"
+        android:id="@+id/claystudio_image"
         android:src="@drawable/claystudio"
+        android:layout_below="@id/title_textview"
         android:scaleType="centerCrop"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_width="match_parent"
+        android:layout_width="380sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_height="300sp" />
     <TextView
-        android:id="@+id/happybirthday_textview"
+        android:id="@+id/title_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -30,14 +33,47 @@
         android:textColor="@android:color/white"
         android:text="Play with Clay" />
     <TextView
-        android:id="@+id/from_textview"
+        android:id="@+id/location_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:textSize="20sp"
-        android:padding="20dp"
+        android:layout_below="@id/email_textview"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
         android:fontFamily="sans-serif-medium"
         android:textColor="@android:color/white"
-        android:text="From: Elle" />
+        android:text="137-139 North Second Street,           Philadelphia, PA 19106" />
+    <TextView
+        android:id="@+id/phone_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/claystudio_image"
+        android:textSize="18dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/white"
+        android:text="Phone: 215-925-3453" />
+    <TextView
+        android:id="@+id/email_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_textview"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/white"
+        android:text="Email: info@theclaystudio.org" />
+
+    <TextView
+        android:id="@+id/hours_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_textview"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/white"
+        android:text="Monday–Saturday 11am – 6pm                  Sunday 12pm – 6pm" />
 </RelativeLayout>
