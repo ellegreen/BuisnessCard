@@ -13,11 +13,11 @@
         android:layout_height="match_parent" />
     <ImageView
         android:id="@+id/player_image"
-        android:src=""
+        android:src="@drawable/claystudio"
         android:scaleType="centerCrop"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_width="200sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
         android:layout_height="300sp" />
     <TextView
         android:id="@+id/happybirthday_textview"
